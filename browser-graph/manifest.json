@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Browser Journey Graph",
+  "version": "1.0",
+  "description": "Visualizes browser journey as an interactive graph.",
+  "permissions": ["tabs", "storage", "favicon", "scripting", "activeTab"],
+  "web_accessible_resources": [
+    {
+      "resources": ["index.html", "style.css", "graph.js", "vis-network.min.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Open Visualizer"
+  }
+}

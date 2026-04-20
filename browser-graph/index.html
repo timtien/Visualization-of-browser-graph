@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser Journey Graph</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="vis-network.min.js"></script>
+</head>
+<body>
+  <div id="controls" style="display:flex; align-items:center;">
+    <button id="clearBtn">Clear Graph History</button>
+  </div>
+  <button id="closeBtn" style="position:absolute; top:16px; right:16px; z-index:10; background:transparent; box-shadow:none; padding:4px 8px; font-size:18px; color:#94a3b8; border:none; line-height:1; cursor:pointer; font-weight:bold; transition: color 0.2s;" title="Close Window" onmouseover="this.style.color='#f87171'" onmouseout="this.style.color='#94a3b8'">✕</button>
+  <div id="mynetwork"></div>
+  <script src="graph.js"></script>
+</body>
+</html>
